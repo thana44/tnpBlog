@@ -18,7 +18,7 @@ function BlogCard({blogData, type}) {
     useEffect(()=>{
         if(blogData?.blogPosted){
             const date = new Date(blogData?.blogPosted)
-            date.setHours(date.getHours() + 7)
+            date.setHours(date.getHours())
             setPosted(formatDistanceToNow(date, { addSuffix: true }))
         }
     },[blogData])
