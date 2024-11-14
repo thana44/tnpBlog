@@ -22,7 +22,7 @@ function Postedby({blog, isLoading}) {
   useEffect(()=>{
     if(blogPosted){
       const date = new Date(blogPosted)
-      date.setHours(date.getHours() + 7)
+      date.setHours(date.getHours())
       setTimeAgo(formatDistanceToNow(date, { addSuffix: true }))
     }
   },[blogPosted])

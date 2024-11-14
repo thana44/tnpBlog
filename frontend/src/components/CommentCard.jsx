@@ -9,9 +9,9 @@ import { clearUser } from '../redux/reduxSlice/userSlice';
 import { useNavigate } from 'react-router-dom';
 
 function CommentCard({commentData}) {
-    console.log(commentData, 'this is comment data')
+    // console.log(commentData, 'this is comment data')
     const date = new Date(commentData?.dateComment)
-    date.setHours(date.getHours() + 7)
+    date.setHours(date.getHours())
     const posted = formatDistanceToNow(date, { addSuffix: true })
     const {currentUser} = useSelector((state)=> state.user)
     const dispatch = useDispatch()

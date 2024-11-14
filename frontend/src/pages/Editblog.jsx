@@ -111,7 +111,6 @@ function Editblog() {
             setIsLoading(false)
         }
       }
-console.log(newImage,'this is new image')
 
   return (
     <div className='mt-40 bg-transparent pb-3 px-4 sm:px-16 md:px-20'>

@@ -19,7 +19,7 @@ function Commentcon() {
     const [comment, setComment] = useState('')
     const navigate = useNavigate()
 
-    console.log(comment, 'test id blog')
+    // console.log(comment, 'test id blog')
 
     const closeComment = ()=>{
       try{
@@ -44,7 +44,7 @@ function Commentcon() {
       getCommentFunction()
     },[blogId])
 
-    console.log(allComment, 'test')
+    // console.log(allComment, 'test')
 
     const addCommentFunction = async()=>{
       try{

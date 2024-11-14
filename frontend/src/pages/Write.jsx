@@ -43,7 +43,7 @@ function Write() {
         setCategory(value); // อัปเดตค่าที่ได้รับจากลูก
       };
 
-      console.log(blogImage)
+    //   console.log(blogImage)
 
       const createBlogFunction = async()=>{
         setIsLoading(true)

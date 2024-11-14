@@ -24,7 +24,7 @@ function FinduserCard({userCardData}) {
     }
   },[userCardData])
 
-  console.log(userCardData,'test')
+  // console.log(userCardData,'test')
   
   return (
     <Link to={`/profile/${userForm?.userId}`}>
