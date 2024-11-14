@@ -24,7 +24,7 @@ const app = express()
 app.use(cookieParser())
 app.use(cors({
     credentials:true,
-    origin: ['http://localhost:5173']
+    origin: ['http://localhost:5173', process.env.FRONTEND_HOST]
 }))
 // app.use(bodyParser.json({limit: '30mb', extended: true}))
 // app.use(bodyParser.urlencoded({limit: '30mb', extended: true}))
